@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+    <title>Jquery Mobile</title>
+</head>
+<body>
+   <div data-role="page" id="home">
+    <div data-role="header" style="background-color: rgba(0, 238, 255, 0.645);">
+        <h1 style="color: red;">SVPM Boys Hostel</h1>
+    </div>
+    <div data-role="navbar" class-grid="c">
+      <ul>
+        <a href="#home" class="ui-btn ui-btn-active">Home</a>
+        <a href="#about" class="ui-btn">About</a>
+        <a href="#admission" class="ui-btn">Admission</a>
+        <a href="#staff" class="ui-btn">Staff Info</a>
+      </ul>
+    </div>
+    <div data-role="content">
+        <h1 style="text-align: center;">Svpm Boys Hostel</h1>
+        <img src="https://pharmacy.svpm.org.in/images/hostel_facility/3.png" alt="hostel">
+        <h2 style="color: rgba(255, 0, 106, 0.952);">Welcome to Boys Hostel <br> We provide admission in affordable amount to everyon.as we know 
+        the most of students coming from economically weaker background. </h2>
+    </div>
+    <div data-role="footer">
+        <h1>Quick access</h1>
+        <ul>
+            <a href="#home" class="ui-btn ui-btn-active">Home</a>
+            <a href="#about" class="ui-btn">About</a>
+            <a href="#admission" class="ui-btn">Admission</a>
+            <a href="#staff" class="ui-btn">Staff Info</a>
+          </ul>
+    </div>
+   </div> 
+   <div data-role="page" id="about">
+    <div data-role="header" style="background-color: aqua;">
+        <h1 style="color: rgba(255, 0, 0, 0.541);">SVPM Boys Hostel</h1>
+    </div>
+    <div data-role="navbar" class-grid="c">
+        <ul>
+            <a href="#home" class="ui-btn">Home</a>
+            <a href="#about" class="ui-btn ui-btn-active">About</a>
+            <a href="#admission" class="ui-btn">Admission</a>
+            <a href="#staff" class="ui-btn">Staff Info</a>
+          </ul> 
+
+    </div>
+    <div data-role="content">
+        <img src="https://gyaanarth.com/wp-content/uploads/2022/01/1589370777.png" alt="Logo" width="200px" height="100px" >
+       <h1 style="text-align: center;">Information About hostel</h1>
+       <div style="background-color: coral;">
+        <p><b>Hostel started in 1990.and now it completed a around 34 years.</b></p>
+       </div>
+       <div style="background-color:rgba(176, 187, 230, 0.503);">
+        <p style="color: rgba(255, 0, 0, 0.995);">There are 300 rooms in hostel.</p>
+        <p style="color: blue;">Intake of students are 900. <br>
+        There is students addimated mostally from PUNE,SOLAPUR,SATARA district</p>
+       </div >
+       <div style="background-color:rgba(216, 112, 147, 0.627);">
+        <h3>Collages joined with hostel</h3>
+        <ul>
+            <li> SVPM Collage of Engineering</li>
+            <li> SVPM Collage of Pharamacy</li>
+            <li>Svpm Collage of Management</li>
+            <li>SVPM collage of Diploma</li>
+            <li>ITI</li>
+        </ul>
+       </div>
+       <div style="background-color: bisque;">
+        <h3>PlayGrounds in front of hostel</h3>
+        <ol>
+            <li>Volly Ball</li>
+            <li>Basket Ball</li>
+            <li>Kabbadi</li>
+            <li>Kho-Kho</li>
+        </ol>
+       </div>
+    </div>
+    <div data-role="footer">
+        <h1>Quick access</h1>
+        <ul>
+            <a href="#home" class="ui-btn ">Home</a>
+            <a href="#about" class="ui-btn ui-btn-active">About</a>
+            <a href="#admission" class="ui-btn">Admission</a>
+            <a href="#staff" class="ui-btn">Staff Info</a>
+          </ul>
+    </div>
+   </div> 
+   <div data-role="page" id="admission">
+    <div data-role="header" style="background-color: rgba(0, 255, 255, 0.545);">
+        <h1>SVPM Boys Hostel</h1>
+    </div>
+    <div data-role="navbar">
+        <ul>
+            <a href="#home" class="ui-btn ">Home</a>
+            <a href="#about" class="ui-btn">About</a>
+            <a href="#admission" class="ui-btn ui-btn-active">Admission</a>
+            <a href="#staff" class="ui-btn">Staff Info</a>
+          </ul>
+    </div>
+    <div data-role="content">
+        <h1>Information about Admission</h1>
+        <p>Fees for boys hostel is only rupees 10000 for one year.</p>
+        <div style="background-color: rgba(74, 164, 164, 0.501);">
+            <h3>Online admission form</h3>
+            <form onsubmit="myfunction()">
+               <label for="name">Name</label>
+               <input type="text" id="name" required placeholder="Enter your name">
+               <label for="address">Address</label>
+               <input type="text" id="address" required placeholder="Enter your address">
+               <label for="dob">Date of birth</label>
+               <input type="date" id="dob" required placeholder="Enter your dob">
+               <label for="collage">Collage Name</label>
+               <input type="text" id="collage" required placeholder="Enter your collage name">
+               <label for="fee">Fee Status</label>
+               <input type="text" id="fee" required placeholder="Enter your fee status">
+               <input type="submit" name="submit" id="submit">
+        
+        
+
+            </form>
+            </div>
+ 
+        <script>
+         function myfunction(){
+            let name;
+            let add;
+            let dob;
+            let collage;
+            let fee;
+            name=document.getElementById("name").value;
+            add=document.getElementById("address").value;
+            dob=document.getElementById("dob").value;
+            collage=document.getElementById("collage").value;
+            fee=document.getElementById("fee").value;
+            localStorage.setItem("Name",name);
+            localStorage.setItem("Address",add);
+            localStorage.setItem("Date of birth",dob);
+            localStorage.setItem("Collage Name",collage);
+            localStorage.setItem("Fee Status",fee);
+
+         }
+
+        </script>
+        <h1>Your Registerd Data:</h1>
+<div style="background-color: rgb(216, 216, 61);">
+        Name:
+        <script>
+            document.write(localStorage.getItem("Name"));
+        </script><br>
+        Address:
+        <script>
+            document.write(localStorage.getItem("Address"));
+        </script><br>
+        Date of Birth:
+        <script>
+            document.write(localStorage.getItem("Date of birth"));
+        </script><br>
+        Collage Name:
+        <script>
+            document.write(localStorage.getItem("Collage Name"));
+        </script><br>
+        Fee Status:
+        <script>
+            document.write(localStorage.getItem("Fee Status"));
+        </script>
+        </div>
+    </div>
+    <div data-role="footer">
+        <h1>Quick access</h1>
+        <ul>
+            <a href="#home" class="ui-btn ">Home</a>
+            <a href="#about" class="ui-btn ">About</a>
+            <a href="#admission" class="ui-btn ui-btn-active">Admission</a>
+            <a href="#staff" class="ui-btn">Staff Info</a>
+          </ul>
+    </div>
+   </div> 
+   <div data-role="page" id="staff">
+    <div data-role="header" style="background-color: aqua;">
+        <h1>SVPM Boys Hostel</h1>
+    </div>
+    <div data-role="navbar" class-grig="c">
+        <ul>
+            <a href="#home" class="ui-btn ">Home</a>
+            <a href="#about" class="ui-btn ">About</a>
+            <a href="#admission" class="ui-btn ">Admission</a>
+            <a href="#staff" class="ui-btn ui-btn-active">Staff Info</a>
+          </ul>
+    </div>
+    <div data-role="content">
+
+        <h3 style="color: rgba(243, 91, 71, 0.781);">Information about staff</h3>
+        <div>
+        <p>Rector name of wing a:Mr.Vaibhav Mengade <br>
+         Rector name of wing b:Mr.Chavan Tushar</p>
+</div>
+        <div>
+            <h4>Cleaning staff</h4>
+            <p>Mr.Munde.S.J <br>
+               Mr.Atole.A.B<br>
+               Mr.Jagtap.R.G</p>
+        </div>
+    </div>
+    <div data-role="footer">
+        <h1>Quick access</h1>
+        <ul>
+            <a href="#home" class="ui-btn ">Home</a>
+            <a href="#about" class="ui-btn ">About</a>
+            <a href="#admission" class="ui-btn ">Admission</a>
+            <a href="#staff" class="ui-btn ui-btn-active">Staff Info</a>
+          </ul>
+    </div>
+   </div> 
+</body>
+</html>
