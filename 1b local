@@ -1,0 +1,133 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data transfer to local storage</title>
+    <script src="/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+      
+</head>
+<body>
+    <div class="container-fluid" style="background-color: darkorchid;">
+        <h1>Registration Form</h1>
+        <p>Fill information legal not fake💯</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <form onsubmit="myfunc()">
+                <div>
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" required placeholder="Enter Your Age">
+
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date"  id="dob" required placeholder="Enter Your Date of Birth">
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" required placeholder="Enter your valid email">
+                </div>
+                <div>
+                    <label for="add">Address</label>
+                    <input type="text" id="add" required placeholder="Enter your Address">
+                </div>
+                <div>
+                    <label for="proffesion">Proffesion</label>
+                    <input type="text" id="proffesion" required placeholder="Enter your Proffesion">
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function myfunc(){
+    let name;
+    let age;
+    let dob;
+    let email;
+    let address;
+    let proffesion;
+    name=document.getElementById("name").value;
+    age=document.getElementById("age").value;
+    dob=document.getElementById("dob").value;
+    email=document.getElementById("Email").value;
+    address=document.getElementById("add").value;
+    proffesion=document.getElementById("proffesion").value;
+    localStorage.setItem("Name",name);
+    localStorage.setItem("age",age);
+    localStorage.setItem("DOB",dob);
+    localStorage.setItem("Email",email);
+    localStorage.setItem("Address",address);
+    localStorage.setItem("Proffesion",proffesion);
+
+}
+    </script>
+<div class="container">
+    <h1>
+        Your Registerd Data :
+    </h1>
+    <div>
+        Name:
+        <script>
+            document.write(localStorage.getItem("Name"));
+        </script>
+    </div>
+    <div>
+        Age:
+        <script>
+            document.write(localStorage.getItem("age"));
+        </script>
+    </div>
+    <div>
+        Date of birth:
+        <script>
+            document.write(localStorage.getItem("DOB"));
+        </script>
+    </div>
+    <div>
+       Email :
+        <script>
+            document.write(localStorage.getItem("Email"));
+        </script>
+    </div>
+    <div>
+        Address:
+        <script>
+            document.write(localStorage.getItem("Address"));
+        </script>
+    </div>
+    <div>
+        Proffesion:
+        <script>
+            document.write(localStorage.getItem("Proffesion"));
+        </script>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+style.css
+
+.container{
+    background-color: aqua;
+}
+div{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
